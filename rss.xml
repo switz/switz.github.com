@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Daniel Saewitz]]></title>
-  <link href="http://switz.github.com/rss.xml" rel="self"/>
-  <link href="http://switz.github.com/"/>
-  <updated>2013-01-15T03:52:06-05:00</updated>
-  <id>http://switz.github.com/</id>
+  <link href="http://switz.github.com/barefootbob/rss.xml" rel="self"/>
+  <link href="http://switz.github.com/barefootbob/"/>
+  <updated>2013-01-15T03:53:25-05:00</updated>
+  <id>http://switz.github.com/barefootbob/</id>
   <author>
     <name><![CDATA[Daniel Saewitz]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Node.js Websocket Hosting Roundup]]></title>
-    <link href="http://switz.github.com/node-dot-js-websocket-hosting-roundup"/>
+    <link href="http://switz.github.com/barefootbob/node-dot-js-websocket-hosting-roundup"/>
     <updated>2013-01-07T15:44:00-05:00</updated>
-    <id>http://switz.github.com/node-dot-js-websocket-hosting-roundup</id>
+    <id>http://switz.github.com/barefootbob/node-dot-js-websocket-hosting-roundup</id>
     <content type="html"><![CDATA[<p>Over the past few months, I have been building a <a href="http://derbyjs.com">DerbyJS</a> application. Derby is absolutely changing the game as far as frameworks go. I won&#8217;t delve into the benefits or features here, but it&#8217;s built on top of standard npm modules like Express, Browserify, and Socket.io. This allows for immense customizability and compatibility with existing node solutions rather than the walled garden that other frameworks impose.</p>
 
 <p>My Derby app has been running stably for months, but I was nearing the end of my yearly Linode subscription and felt compelled to switch things up. Here&#8217;s what I discovered in my research.</p>
@@ -70,16 +70,16 @@
   
   <entry>
     <title type="html"><![CDATA[Recently Read Articles On Facebook]]></title>
-    <link href="http://switz.github.com/recently-read-articles-on-facebook"/>
+    <link href="http://switz.github.com/barefootbob/recently-read-articles-on-facebook"/>
     <updated>2012-03-12T16:48:00-04:00</updated>
-    <id>http://switz.github.com/recently-read-articles-on-facebook</id>
+    <id>http://switz.github.com/barefootbob/recently-read-articles-on-facebook</id>
     <content type="html"><![CDATA[<p>Facebook is great. It might not be for everyone, but to say that it has no positive purpose is just plain ignorant. Everyone who uses Facebook complains about changes constantly (see: newsfeed, messages, redesigns, etc) and within weeks they realize how genius these additions usually are. It is a company that is built on innovation, and it has been clear for a while that Facebook wants to become the next Google.</p>
 
 <p>Mark Zuckerberg has made it obvious that he wants to intertwine Facebook with your life. The timeline is meant to be your life&#8217;s story. I personally am not as fond of the timeline as I believe not many people want to reminisce their awkward social past in high school, but I get the point. Also, I don&#8217;t think it&#8217;s aesthetically pleasing to read as your eyes have to dart back and forth across two columns. Over a few years, once we&#8217;ve amassed content day in and day out, we&#8217;ll be able to see the places we&#8217;ve been, the people we&#8217;ve met, and the things we&#8217;ve accomplished.</p>
 
 <p>For the past few months, Facebook has ingrained itself into many notable blogs and applications (e.g. Spotify). When you read an article, it is automatically posted into your timeline.</p>
 
-<p style="text-align:center;"><img src="http://switz.github.com/downloads/images/facebook-read.png" alt="Facebook" /></p>
+<p style="text-align:center;"><img src="http://switz.github.com/barefootbob/downloads/images/facebook-read.png" alt="Facebook" /></p>
 
 <p>I for one, believe that nothing should ever be automatically posted to your timeline without direct consent. Just because I read an article does not mean that I endorse said article. Therefore, I never give access to these &#8220;social reader&#8221; applications for that very reason. Now, here&#8217;s the real problem. If I see an article that my friend has read that I&#8217;m interested in, I click on it. Instead of the article loading up like one would expect, it forces me to give that app access to my timeline and my personal information. There is no reason why I should have to give any application my information just to read an article that is open to the free web. It is very frustrating to click on a link, only to be harassed into giving up my privacy.</p>
 
@@ -102,9 +102,9 @@
   
   <entry>
     <title type="html"><![CDATA[iTunes Account Hacked Twice in 24 Hours]]></title>
-    <link href="http://switz.github.com/itunes-account-hacked-twice-in-24-hours"/>
+    <link href="http://switz.github.com/barefootbob/itunes-account-hacked-twice-in-24-hours"/>
     <updated>2012-02-27T01:48:00-05:00</updated>
-    <id>http://switz.github.com/itunes-account-hacked-twice-in-24-hours</id>
+    <id>http://switz.github.com/barefootbob/itunes-account-hacked-twice-in-24-hours</id>
     <content type="html"><![CDATA[<p>Last night, February 26th 2012, my iTunes account was hacked.  The password had been changed and the $81 or so sitting in the account was gone.  Luckily I was awake at 2 AM when it happened.  I never received an email saying my password had changed.  Quickly, I emailed Apple Support informing that I did not purchase the app 江湖行2, and that I couldn&#8217;t even remotely read what app that was (but I was genuinely excited to own the sequel).  The game bought appears to be the free &#8221;<a href="http://translate.google.com/translate?hl=en&amp;sl=zh-CN&amp;u=http://itunes.apple.com/cn/app/jiang-hu-xing2/id480073223%3Fmt%3D8&amp;ei=FChLT8LqIInz0gG9ho3yDQ&amp;sa=X&amp;oi=translate&amp;ct=result&amp;resnum=4&amp;ved=0CFgQ7gEwAw&amp;prev=/search%3Fq%3D%25E6%25B1%259F%25E6%25B9%2596%25E8%25A1%258C2%26hl%3Den%26safe%3Doff%26prmd%3Dimvnsa">Rivers and Lakes 2</a>&#8221;.  All costs were for in-app purchase totaling the amount in the account.  They did not spend any more, which I assume is because they did not have my credit card pin number.  I also changed my email password.</p>
 
 <p>Apple quickly (to my delight) emailed me back and credited my account with the funds even though this was an &#8221;<em>exception to the iTunes Store Terms and Conditions, which state that all sales are final.</em>&#8221;  I changed my password and went to sleep satisfied.</p>
@@ -117,9 +117,9 @@
   
   <entry>
     <title type="html"><![CDATA[Vinyl Record Length]]></title>
-    <link href="http://switz.github.com/interesting-note-about-vinyl-record-length"/>
+    <link href="http://switz.github.com/barefootbob/interesting-note-about-vinyl-record-length"/>
     <updated>2011-12-12T00:34:00-05:00</updated>
-    <id>http://switz.github.com/interesting-note-about-vinyl-record-length</id>
+    <id>http://switz.github.com/barefootbob/interesting-note-about-vinyl-record-length</id>
     <content type="html"><![CDATA[<p>This conversation came up due to discussion on Twitter with <a href="https://twitter.com/phish83">@Phish83</a> about pressing the Phish record <em><a href="http://en.wikipedia.org/wiki/A_Live_One">A Live One</a></em> on vinyl. One particular track (<a href="http://phish.net/song/tweezer/history">Tweezer</a>) is 30 minutes long.  I thought you could only fit ~22 minutes on the single side of a record, but apparently they have been able to fit up to 45 minutes on each side. They essentially just made the width of each groove smaller, which degraded the sound. I doubt it could hold up Phish&#8217;s wall of music well, but who knows? It&#8217;d be interesting to hear.</p>
 
 <p><a href="http://en.wikipedia.org/wiki/LP_record#Columbia">Wikipedia</a>:</p>
@@ -139,9 +139,9 @@ When initially introduced, 12-inch LPs played for a maximum of 45 minutes, divid
   
   <entry>
     <title type="html"><![CDATA[15 Minutes of Fame]]></title>
-    <link href="http://switz.github.com/15-minutes-of-fame"/>
+    <link href="http://switz.github.com/barefootbob/15-minutes-of-fame"/>
     <updated>2011-11-26T16:12:00-05:00</updated>
-    <id>http://switz.github.com/15-minutes-of-fame</id>
+    <id>http://switz.github.com/barefootbob/15-minutes-of-fame</id>
     <content type="html"><![CDATA[<p>You&#8217;ll probably never read this article. You may never even know my name. But, when those fifteen minutes of fame hit, you must be ready. You can bask in its glory and enjoy your peak. Or you can be prepared, and ride that wave. You <u>will</u> do <em>something</em> great one day and people will notice. Many stop right there. Why? You might get an extra 50 Twitter followers that day. Maybe 100. Why not give them a reason to keep coming back? Why not give them a reason to tell their friends to start paying attention to you? There are thousands of intelligent people out there that get lost in the shuffle of this universe we call the Internet. They lose motivation. Why keep building if no one is around to see it? Many engineers have the problem of getting noticed. Not every innovation has that immediate <em>wow</em> factor. The same inability to present one&#8217;s self socially can hurt their inventions. Keep ideas around.</p>
 
 <p>Your fifteen minutes will hit&#8230;Are you ready?</p>
@@ -152,12 +152,12 @@ When initially introduced, 12-inch LPs played for a maximum of 45 minutes, divid
   
   <entry>
     <title type="html"><![CDATA[How to modify Jekyll for use with external links]]></title>
-    <link href="http://switz.github.com/how-to-modify-jekyll-for-use-with-external-links"/>
+    <link href="http://switz.github.com/barefootbob/how-to-modify-jekyll-for-use-with-external-links"/>
     <updated>2011-11-25T17:21:00-05:00</updated>
-    <id>http://switz.github.com/how-to-modify-jekyll-for-use-with-external-links</id>
+    <id>http://switz.github.com/barefootbob/how-to-modify-jekyll-for-use-with-external-links</id>
     <content type="html"><![CDATA[<p>Many bloggers like to post external links such as other blogs and comment on them for their readers to see.  One of the more well-known examples of this is John Gruber&#8217;s <a href="http://daringfireball.net/linked/">Linked List</a>.  Unfortunately, this feature is not built into Jekyll nor Octopress.  Read on to find out how you can build it in yourself.</p>
 
-<p style="text-align:center;"><img src="http://switz.github.com/downloads/images/linked-post.png" alt="Linked Post" /><br />
+<p style="text-align:center;"><img src="http://switz.github.com/barefootbob/downloads/images/linked-post.png" alt="Linked Post" /><br />
 <em>The blue link indicates an externally linked post</em></p>
 
 <p>Jekyll uses <a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter">YAML Front Matter</a> as a way of storing variables on posts such as title, date, and more.  We are going to add our own custom variable: <em>link</em>.</p>
@@ -231,7 +231,7 @@ link: http://blog.phish.net/1322194271/video-of-the-week-1997-11-22
 
 <p>The first group of code will output this HTML:</p>
 
-<pre><code>&lt;h1 class="entry-title"&gt;&lt;a href="http://switz.github.com/2011/11/25/phish-video-of-the-week-1997-11-22"&gt;Phish Video of the Week: 1997-11-22&lt;/a&gt;&lt;/h1&gt;
+<pre><code>&lt;h1 class="entry-title"&gt;&lt;a href="http://switz.github.com/barefootbob/2011/11/25/phish-video-of-the-week-1997-11-22"&gt;Phish Video of the Week: 1997-11-22&lt;/a&gt;&lt;/h1&gt;
 </code></pre>
 
 <p>The second will output this:</p>
@@ -264,10 +264,10 @@ link: http://blog.phish.net/1322194271/video-of-the-week-1997-11-22
   
   <entry>
     <title type="html"><![CDATA[Octopress and Jekyll Tips and Tricks]]></title>
-    <link href="http://switz.github.com/octopress-and-jekyll-tips-and-tricks"/>
+    <link href="http://switz.github.com/barefootbob/octopress-and-jekyll-tips-and-tricks"/>
     <updated>2011-11-21T20:02:00-05:00</updated>
-    <id>http://switz.github.com/octopress-and-jekyll-tips-and-tricks</id>
-    <content type="html"><![CDATA[<p>It&#8217;s been about <a href="http://switz.github.com/2011/11/20/welcome-to-my-musings">a day</a> with my Jekyll blog and I&#8217;m loving it.  Octopress adds a few enhancements on top of Jekyll that really make things easier.  One of those improvements is a script that automatically generates a new markdown file with the proper <a href="https://github.com/mojombo/jekyll/wiki/yaml-front-matter">YAML headers</a>.  In order to do this, you must be in the right directory and then run <code>rake new_post["Title"]</code>.  This is simple and all, but I want to be able to generate a blog post from any directory.</p>
+    <id>http://switz.github.com/barefootbob/octopress-and-jekyll-tips-and-tricks</id>
+    <content type="html"><![CDATA[<p>It&#8217;s been about <a href="http://switz.github.com/barefootbob/2011/11/20/welcome-to-my-musings">a day</a> with my Jekyll blog and I&#8217;m loving it.  Octopress adds a few enhancements on top of Jekyll that really make things easier.  One of those improvements is a script that automatically generates a new markdown file with the proper <a href="https://github.com/mojombo/jekyll/wiki/yaml-front-matter">YAML headers</a>.  In order to do this, you must be in the right directory and then run <code>rake new_post["Title"]</code>.  This is simple and all, but I want to be able to generate a blog post from any directory.</p>
 
 <p>Here&#8217;s my solution:</p>
 
@@ -369,9 +369,9 @@ link: http://blog.phish.net/1322194271/video-of-the-week-1997-11-22
   
   <entry>
     <title type="html"><![CDATA[French Press: Javascript Beautifier for Espresso.app]]></title>
-    <link href="http://switz.github.com/french-press-javascript-beautifier-for-espresso-dot-app"/>
+    <link href="http://switz.github.com/barefootbob/french-press-javascript-beautifier-for-espresso-dot-app"/>
     <updated>2011-11-20T21:11:00-05:00</updated>
-    <id>http://switz.github.com/french-press-javascript-beautifier-for-espresso-dot-app</id>
+    <id>http://switz.github.com/barefootbob/french-press-javascript-beautifier-for-espresso-dot-app</id>
     <content type="html"><![CDATA[<p><a href="https://github.com/switz213/FrenchPress.sugar">https://github.com/switz213/FrenchPress.sugar</a></p>
 
 <p>Today I whipped up something that I&#8217;ve wanted for a long time in <a href="http://macrabbit.com/espresso/">Espresso</a>.  Now that Espresso 2 has javascript actions this is a possibility!  Read below to find out more.</p>
@@ -465,16 +465,16 @@ git clone git://github.com/switz213/FrenchPress.sugar
   
   <entry>
     <title type="html"><![CDATA[Welcome to My Musings]]></title>
-    <link href="http://switz.github.com/welcome-to-my-musings"/>
+    <link href="http://switz.github.com/barefootbob/welcome-to-my-musings"/>
     <updated>2011-11-20T12:22:00-05:00</updated>
-    <id>http://switz.github.com/welcome-to-my-musings</id>
+    <id>http://switz.github.com/barefootbob/welcome-to-my-musings</id>
     <content type="html"><![CDATA[<p>Welcome.</p>
 
 <p><a href="http://www.youtube.com/watch?v=gMAbNFptzAA">Stay awhile and listen.</a></p>
 
 <h2>$ whoami</h2>
 
-<p><a href="http://switz.github.com/about"><code>Daniel Saewitz</code></a></p>
+<p><a href="http://switz.github.com/barefootbob/about"><code>Daniel Saewitz</code></a></p>
 
 <p>This is a window into my mind.</p>
 
