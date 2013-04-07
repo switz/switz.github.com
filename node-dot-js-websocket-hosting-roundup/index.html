@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://switz.github.com/barefootbob/node-dot-js-websocket-hosting-roundup">
+  <link rel="canonical" href="http://saewitz.com/node-dot-js-websocket-hosting-roundup">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/minny-ck.js"></script>
@@ -112,7 +112,11 @@
 
 <p style="text-align:center;"><a href="http://i.imgur.com/bGytD.png"><img src="http://i.imgur.com/jm46f.png" alt="Nodejitsu" /></a></p>
 
-<p>Recently, I decided I wanted to test out Nodejitsu in a production environment so I purchased 3 drones and gave it a go. After about 5-10 users concurrent users running on two drones, I was seeing Websocket errors all over the place. I can&#8217;t explain why this was happening, but I quickly realized that this service just is not ready. I scrambled to revert my domain back over to my Linode for the time being. While nodejitsu was one of the few to promise websocket support and have it actually work, their CPU seemed to be quite slow and therefore websocket&#8217;s speed suffered as a result. Unfortunately, I can&#8217;t recommend their service in its current iteration. There were just too many snags that I hit along the way. Perhaps they should spend less time answering questions in IRC and more time improving the stability of their service.</p>
+<p>While nodejitsu was one of the few to promise websocket support and have it actually work, their CPU seemed to be quite slow and therefore websocket&#8217;s speed suffered as a result. Unfortunately, I can&#8217;t recommend their service in its current iteration. There were just too many snags that I hit along the way.</p>
+
+<p>Update: Since posting, Nodejitsu has made many improvements to their service. jitsu deploys actually work well and sites seem to hold up. But, my site has gone down twice with errors in the past few days. When entering IRC and asking why my site was down, the support blamed it on their router and said it would be reset in a few hours. Unfortunately, they could do nothing about it so here I was, sitting helpless while my sites were down for a few hours. That&#8217;s <strong>unacceptable</strong>.</p>
+
+<p>Yesterday, I was planning on launching a site on Nodejitsu and when I went to IRC for them to add an SSL certificate (something I&#8217;ve done before), they told me I couldn&#8217;t. When asked why, they said only business plans (another 40-50 bucks a month; something a student can&#8217;t afford) are allowed to use SSL. They never notified me of this change, just like they neglected to notify me for <strong>expected</strong> downtime.</p>
 
 <h2>Heroku</h2>
 
