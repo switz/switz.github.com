@@ -4,7 +4,7 @@
   <title><![CDATA[Daniel Saewitz]]></title>
   <link href="http://saewitz.com/rss.xml" rel="self"/>
   <link href="http://saewitz.com/"/>
-  <updated>2013-04-07T15:46:53-04:00</updated>
+  <updated>2013-04-07T15:47:25-04:00</updated>
   <id>http://saewitz.com/</id>
   <author>
     <name><![CDATA[Daniel Saewitz]]></name>
@@ -36,7 +36,7 @@
 
 <p>While nodejitsu was one of the few to promise websocket support and have it actually work, their CPU seemed to be quite slow and therefore websocket&#8217;s speed suffered as a result. Unfortunately, I can&#8217;t recommend their service in its current iteration. There were just too many snags that I hit along the way.</p>
 
-<p>Update: Since posting, Nodejitsu has made many improvements to their service. jitsu deploys actually work well and sites seem to hold up. But, my site has gone down twice with errors in the past few days. When entering IRC and asking why my site was down, the support blamed it on their router and said it would be reset in a few hours. Unfortunately, they could do nothing about it so here I was, sitting helpless while my sites were down for a few hours. That&#8217;s <strong>unacceptable</strong>.</p>
+<p>Update: Since posting, Nodejitsu has made many improvements to their service. jitsu deploys actually work well and sites seem to hold up. But, my site has gone down twice with errors in the past few days. When entering IRC and asking why my site was down, the support blamed it on their router and said it would be reset in a few hours. Unfortunately, they could do nothing about it so here I was, sitting helpless while my sites were down for a few hours. That is <strong>unacceptable</strong>.</p>
 
 <p>Yesterday, I was planning on launching a site on Nodejitsu and when I went to IRC for them to add an SSL certificate (something I&#8217;ve done before), they told me I couldn&#8217;t. When asked why, they said only business plans (another 40-50 bucks a month; something a student can&#8217;t afford) are allowed to use SSL. They never notified me of this change, just like they neglected to notify me for <strong>expected</strong> downtime.</p>
 
