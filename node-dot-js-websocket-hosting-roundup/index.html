@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Node.js Websocket Hosting Roundup - Daniel Saewitz</title>
+  <meta name="author" content="Daniel Saewitz">
+
+  
+  <meta name="description" content="Over the past few months, I have been building a DerbyJS application. Derby is absolutely changing the game as far as frameworks go. I won&#8217;t &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://saewitz.com/node-dot-js-websocket-hosting-roundup">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/minny-ck.js"></script>
+  <script src="/javascripts/scripts.js"></script>
+  <link href="/rss.xml" rel="alternate" title="Daniel Saewitz" type="application/atom+xml">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27174018-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body  class="no-sidebar">
+  <div id="top-info"><div id="bar"></div>
+<div id="header-container">
+	<div id="header">
+		<div id="header-left">
+		<h1>
+			<a href="/">Daniel Saewitz</a>
+		</h1>
+		<br />
+		<br />
+		<br />
+		<a href="/about">About</a> · <a href="http://www.twitter.com/switz213">Twitter</a> · <a href="/web">Web</a>
+	  </div>
+	  <div id="header-right">
+	  	<a href="http://feeds.feedburner.com/saewitz">RSS</a>
+	  </div>
+	  <div style="clear:both;"></div>
+	</div>
+	<hr />
+	</div>
+</div>
+</div>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+    	
+    		<h1 class="entry-title"><a href="/node-dot-js-websocket-hosting-roundup">Node.js Websocket Hosting Roundup</a></h1>
+    	
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-07T15:44:00-05:00" pubdate data-updated="true">January 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+
+<div class="entry-content"><p>Over the past few months, I have been building a <a href="http://derbyjs.com">DerbyJS</a> application. Derby is absolutely changing the game as far as frameworks go. I won&#8217;t delve into the benefits or features here, but it&#8217;s built on top of standard npm modules like Express, Browserify, and Socket.io. This allows for immense customizability and compatibility with existing node solutions rather than the walled garden that other frameworks impose.</p>
+
+<p>My Derby app has been running stably for months, but I was nearing the end of my yearly Linode subscription and felt compelled to switch things up. Here&#8217;s what I discovered in my research.</p>
+
+<h2>Roll Your Own</h2>
+
+<p>I ran my app for quite some time on a small Linode. The benefits are obvious. You have total control over your setup. This means you can support websockets out of the gate. However, unless you&#8217;re a sysadmin wizard, you&#8217;re going to spend quite some time doing maintenance and initial setup. I finally found a solution that worked for me, but eventually decided to move towards greener pastures with a PaaS provider. There&#8217;s something nice about not worrying about infrastructure or deployment. I recommend everyone give being a sysadmin a try just to explore what it takes to run your own server. After about a year, I decided I didn&#8217;t want to maintain it myself any more. But the experience was worth it&#8217;s weight in gold.</p>
+
+<h2>Nodejitsu</h2>
+
+<p><a href="http://nodejitsu.com">Link</a></p>
+
+<p>Brimming with hype off of hackathons and Hacker News, I was ecstatic to try out Nodejitsu. They promised websocket support out of the gate even when scaling horizontally with multiple <em>drones</em> (their cute name for extra processes). I tested it myself over many months before finally deciding to give it a production go. Although I really wanted to like nodejitsu, they made it very difficult. It would take 4-5 <code>jitsu deploy</code>s every time I wanted to update my app due to obscure <em>socket hangups</em>. While they are <strong>very</strong> responsive in IRC, they often told me that large apps can cause these errors. Meanwhile my app is only about 300KB. Their web-panel, while slick, was unresponsive at times. I had a tough time logging in just to take a screenshot for this post.</p>
+
+<p style="text-align:center;"><a href="http://i.imgur.com/bGytD.png"><img src="http://i.imgur.com/jm46f.png" alt="Nodejitsu" /></a></p>
+
+<p>While nodejitsu was one of the few to promise websocket support and have it actually work, their CPU seemed to be quite slow and therefore websocket&#8217;s speed suffered as a result. Unfortunately, I can&#8217;t recommend their service in its current iteration. There were just too many snags that I hit along the way.</p>
+
+<p>Update: Since posting, Nodejitsu has made many improvements to their service. jitsu deploys actually work well and sites seem to hold up. But, my site has gone down twice with errors in the past few days. When entering IRC and asking why my site was down, the support blamed it on their router and said it would be reset in a few hours. Unfortunately, they could do nothing about it so here I was, sitting helpless while my sites were down for a few hours. That is <strong>unacceptable</strong>.</p>
+
+<p>Yesterday, I was planning on launching a site on Nodejitsu and when I went to IRC for them to add an SSL certificate (something I&#8217;ve done before), they told me I couldn&#8217;t. When asked why, they said only business plans (another 40-50 bucks a month; something a student can&#8217;t afford) are allowed to use SSL. They never notified me of this change, just like they neglected to notify me for <strong>expected</strong> downtime.</p>
+
+<h2>Heroku</h2>
+
+<p><a href="http://heroku.com">Link</a></p>
+
+<p>Heroku doesn&#8217;t support websockets. Heroku is expensive. But, Heroku has been battle tested and can hold up to the heat. I&#8217;ve had a decent amount of experience with Heroku before giving them a go in a production environment and I have to say that the experience has been nothing but positive. No consistently obscure errors. No frills. It hosts my app, and it does it well. I was worried that <code>xhr-polling</code> would be consistently slower than websockets, but that&#8217;s turned out to be false. In fact, <code>xhr-polling</code> on Heroku was faster than websockets on Nodejitsu. I can&#8217;t explain why, but by comparing the two side-by-side it was blatantly true. I have yet to test out multiple <em>dynos</em>, but according to <a href="http://habitrpg.com">Tyler Renelle</a>, his Derby app held up to about 1000 concurrent connections on a single Heroku dyno with <code>xhr-polling</code> enabled. This is more than acceptable to me for the time being.</p>
+
+<p>Heroku is not perfect, but it&#8217;s a <strong>very</strong> good option for hosting a small node application that doesn&#8217;t need to handle thousands of concurrent users. Plus, you&#8217;re first dyno is always free. My app is currently running on Heroku and handling it swimmingly.</p>
+
+<h2>AppFog</h2>
+
+<p><a href="http://appfog.com">Link</a></p>
+
+<p>Much to my surprise, I&#8217;ve had a very positive experience with Appfog. I went in quite skeptical, but my app was up and running in minutes. They give you something that no one else is able to offer. 2GB of memory for free. Plus, you&#8217;re able to spread that across up to 8 instances of your application&#8230; all for free! So, 8 instances running at 256 MB each right out of the gate! My Linode was only giving me 512 MB for one instance and it cost over $200 a year. I have yet to use this in a production environment, but through my own load-testing AppFog has held up better than almost every other provider. On top of which, they recently acquired <a href="http://nodester.com/">Nodester</a> thereby explicitly promising to have websocket support soon. Also, their web-panel works surprisingly well and I haven&#8217;t had any major issues with it.</p>
+
+<p style="text-align:center;"><a href="http://i.imgur.com/CXjms.png"><img src="http://i.imgur.com/KJrXU.png" alt="AppFog" /></a></p>
+
+<p>I&#8217;m really excited about AppFog and have been seriously considering moving my app there full-time. Once websocket support comes through the pipeline, I have a feeling this might be the place I end up. Watch out for them, they&#8217;re clearly not going away without a fight.</p>
+
+<h2>Modulus</h2>
+
+<p><a href="http://modulus.io">Link</a></p>
+
+<p>To be honest, I never heard of this provider before yesterday. My favorite bassist plays a 5 string Modulus bass so the name certainly jumped out at me. I decided to give them a quick try – and I was pleased! My app was up and running within minutes sans issues. Their design is by far the worst out of all the providers, but they&#8217;re young. It seems they&#8217;re focused on providing useful analytics and as much data as possible which is something any sysadmin can appreciate. I can&#8217;t recommend them yet, but since it&#8217;s free [for now] it can&#8217;t hurt to take a look. Watch out for these guys. They&#8217;re up to something.</p>
+
+<p style="text-align:center;"><a href="http://i.imgur.com/tkjzY.png"><img src="http://i.imgur.com/ZruRT.png" alt="Modulus" /></a></p>
+
+<p>The node.js ecosystem is young and growing. There really isn&#8217;t a proper solution yet and, quite frankly, that sucks. But, the future is bright. I can&#8217;t wait to see what 2013 has for us in the land of node.</p>
+
+<p>I would recommend using Heroku if you&#8217;re small or don&#8217;t have to support websockets. Keep your eyes on AppFog and Modulus. If you really want to scale a large websocket application, you&#8217;re probably looking at rolling your own solution using some sort of VPS/Dedicated provider. Good luck and Happy New Year!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+  <div class="clear:both;"></div>
+</div>
+
+    
+    <p class="meta">
+    	I'm not a fan of comments on blogs, but I'd love to talk with you about this post! Email me at <a href="mailto:hi@saewitz.com">hi@saewitz.com</a>.
+    </p>
+  </footer>
+</article>
+
+</div><!--
+
+<aside class="sidebar">
+  
+    
+
+
+
+  
+</aside>
+
+-->
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 Daniel Saewitz All Rights Reserved
+  <br />
+  <span class="credit">
+  	Powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/mojombo/jekyll">Jekyll</a><br />
+  	Terminal icon by <a href="http://p.yusukekamiyamane.com">Yusuke Kamiyamane</a>
+  </span>
+  <br />
+  I just wanted to say hi, again!
+</p>
+
+</footer>
+  
+
+
+</body>
+</html>

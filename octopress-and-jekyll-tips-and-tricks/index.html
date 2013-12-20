@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Octopress and Jekyll Tips and Tricks - Daniel Saewitz</title>
+  <meta name="author" content="Daniel Saewitz">
+
+  
+  <meta name="description" content="It&#8217;s been about a day with my Jekyll blog and I&#8217;m loving it. Octopress adds a few enhancements on top of Jekyll that really make things &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://saewitz.com/octopress-and-jekyll-tips-and-tricks">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/minny-ck.js"></script>
+  <script src="/javascripts/scripts.js"></script>
+  <link href="/rss.xml" rel="alternate" title="Daniel Saewitz" type="application/atom+xml">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27174018-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body  class="no-sidebar">
+  <div id="top-info"><div id="bar"></div>
+<div id="header-container">
+	<div id="header">
+		<div id="header-left">
+		<h1>
+			<a href="/">Daniel Saewitz</a>
+		</h1>
+		<br />
+		<br />
+		<br />
+		<a href="/about">About</a> · <a href="http://www.twitter.com/switz213">Twitter</a> · <a href="/web">Web</a>
+	  </div>
+	  <div id="header-right">
+	  	<a href="http://feeds.feedburner.com/saewitz">RSS</a>
+	  </div>
+	  <div style="clear:both;"></div>
+	</div>
+	<hr />
+	</div>
+</div>
+</div>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+    	
+    		<h1 class="entry-title"><a href="/octopress-and-jekyll-tips-and-tricks">Octopress and Jekyll Tips and Tricks</a></h1>
+    	
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-11-21T20:02:00-05:00" pubdate data-updated="true">November 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+
+<div class="entry-content"><p>It&#8217;s been about <a href="/2011/11/20/welcome-to-my-musings">a day</a> with my Jekyll blog and I&#8217;m loving it.  Octopress adds a few enhancements on top of Jekyll that really make things easier.  One of those improvements is a script that automatically generates a new markdown file with the proper <a href="https://github.com/mojombo/jekyll/wiki/yaml-front-matter">YAML headers</a>.  In order to do this, you must be in the right directory and then run <code>rake new_post["Title"]</code>.  This is simple and all, but I want to be able to generate a blog post from any directory.</p>
+
+<p>Here&#8217;s my solution:</p>
+
+<p>1. Create a file named <code>new_post</code> somewhere outside of your blog&#8217;s directory<sup>1</sup> and paste the following in</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#! /bin/sh</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$1&quot;</span> <span class="o">]</span>
+</span><span class='line'><span class="k">then  </span>
+</span><span class='line'><span class="k">  </span><span class="nb">cd</span> ~/Desktop/Blog <span class="c">#set this to your blog directory</span>
+</span><span class='line'>  rake new_post<span class="o">[</span><span class="s2">&quot;$*&quot;</span><span class="o">]</span>
+</span><span class='line'><span class="k">else  </span>
+</span><span class='line'><span class="k">  </span><span class="nb">echo</span> <span class="s2">&quot;Please enter a post title: ./new_post TITLE&quot;</span>
+</span><span class='line'><span class="k">fi</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2. Set the directory (on line 5) to match your blog&#8217;s directory</p>
+
+<p>3. Open your <code>~/.bash_profile</code> and add the following line</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;$PATH:~/Scripts&quot;</span> <span class="c">#set to your script&#39;s directory</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will allow any script in your Scripts directory to be called from any directory.  If you don&#8217;t want to add that directory to the <code>$PATH</code> variable, just use: <code>alias newpost='~/path/to/newpost'</code> and remove the <code>export PATH</code> line.</p>
+
+<p>4. To run, just type <code>source ~/.bash_profile</code> and then <code>newpost "Octopress and Jekyll Tips and Tricks"</code> (quotes optional)</p>
+
+<p>I also automate the blog push to git<sup>2</sup> from any directory.</p>
+
+<p>1. Create a file called <code>blog_push</code> and paste the following in</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#! /bin/sh</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> -m <span class="s2">&quot;$1&quot;</span> <span class="o">]</span>
+</span><span class='line'><span class="k">then</span>
+</span><span class='line'><span class="k">  </span><span class="nb">cd</span> ~/Desktop/Blog <span class="c">#set to your blog directory</span>
+</span><span class='line'>  rake generate
+</span><span class='line'>  git add .
+</span><span class='line'>  git commit -m <span class="s2">&quot;$*&quot;</span>
+</span><span class='line'>  git push
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'><span class="k">  </span><span class="nb">echo</span> <span class="s2">&quot;No commit message entered: ./blog_push COMMIT_MESSAGE&quot;</span>
+</span><span class='line'><span class="k">fi</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><em>Note: You may have to modify the <code>git push</code> to suit your specific needs.  Use whatever push command you normally use</em></li>
+</ul>
+
+
+<p>2. Set the directory (on line 5) to match your blog&#8217;s directory</p>
+
+<p>3. Open your <code>~/.bash_profile</code> and add the following line</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;$PATH:~/Scripts&quot;</span> <span class="c">#set to your script&#39;s directory</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><em>Note: If you already set the <code>$PATH</code> to that directory, then you don&#8217;t need to do it again</em></li>
+</ul>
+
+
+<p>4. To run, just type <code>source ~/.bash_profile</code> and then <code>blogpush "New Post: Octopress and Jekyll Tips and Tricks"</code> (quotes optional)</p>
+
+<hr />
+
+
+<p>1. I use a scripts directory to store all of my bash scripts in my home directory.<br />
+2. This won&#8217;t work with RSync. It is for Git based (Github, Heroku) blogs.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+  <div class="clear:both;"></div>
+</div>
+
+    
+    <p class="meta">
+    	I'm not a fan of comments on blogs, but I'd love to talk with you about this post! Email me at <a href="mailto:hi@saewitz.com">hi@saewitz.com</a>.
+    </p>
+  </footer>
+</article>
+
+</div><!--
+
+<aside class="sidebar">
+  
+    
+
+
+
+  
+</aside>
+
+-->
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 Daniel Saewitz All Rights Reserved
+  <br />
+  <span class="credit">
+  	Powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/mojombo/jekyll">Jekyll</a><br />
+  	Terminal icon by <a href="http://p.yusukekamiyamane.com">Yusuke Kamiyamane</a>
+  </span>
+  <br />
+  I just wanted to say hi, again!
+</p>
+
+</footer>
+  
+
+
+</body>
+</html>

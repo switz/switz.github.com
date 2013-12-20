@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>French Press: Javascript Beautifier for Espresso.app - Daniel Saewitz</title>
+  <meta name="author" content="Daniel Saewitz">
+
+  
+  <meta name="description" content="https://github.com/switz213/FrenchPress.sugar Today I whipped up something that I&#8217;ve wanted for a long time in Espresso. Now that Espresso 2 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://saewitz.com/french-press-javascript-beautifier-for-espresso-dot-app">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/minny-ck.js"></script>
+  <script src="/javascripts/scripts.js"></script>
+  <link href="/rss.xml" rel="alternate" title="Daniel Saewitz" type="application/atom+xml">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27174018-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body  class="no-sidebar">
+  <div id="top-info"><div id="bar"></div>
+<div id="header-container">
+	<div id="header">
+		<div id="header-left">
+		<h1>
+			<a href="/">Daniel Saewitz</a>
+		</h1>
+		<br />
+		<br />
+		<br />
+		<a href="/about">About</a> · <a href="http://www.twitter.com/switz213">Twitter</a> · <a href="/web">Web</a>
+	  </div>
+	  <div id="header-right">
+	  	<a href="http://feeds.feedburner.com/saewitz">RSS</a>
+	  </div>
+	  <div style="clear:both;"></div>
+	</div>
+	<hr />
+	</div>
+</div>
+</div>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+    	
+    		<h1 class="entry-title"><a href="/french-press-javascript-beautifier-for-espresso-dot-app">French Press: Javascript Beautifier for Espresso.app</a></h1>
+    	
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-11-20T21:11:00-05:00" pubdate data-updated="true">November 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+
+<div class="entry-content"><p><a href="https://github.com/switz213/FrenchPress.sugar">https://github.com/switz213/FrenchPress.sugar</a></p>
+
+<p>Today I whipped up something that I&#8217;ve wanted for a long time in <a href="http://macrabbit.com/espresso/">Espresso</a>.  Now that Espresso 2 has javascript actions this is a possibility!  Read below to find out more.</p>
+
+<br/>
+
+
+<h3>FrenchPress.sugar</h3>
+
+<p>A javascript action that beautifies javascript files into formatted code:</p>
+
+<ul>
+<li><p>Uses the library from jsbeautifier.org</p></li>
+<li><p>To run use Actions->Javascript menu or press <code>Control + Alt + Arrow Up</code></p></li>
+<li><p>This will not fix syntactically incorrect documents</p></li>
+<li><p>This is beta software, please backup your code in advance. You may <em>undo</em> the action by pressing <code>command+z</code> (or Edit->Undo)</p></li>
+</ul>
+
+
+<h3>Installation</h3>
+
+<p><strong>Requires Espresso 2.0</strong></p>
+
+<p>The easiest way to install FrenchPress.sugar currently is directly from GitHub:</p>
+
+<pre><code>cd ~/Library/Application\ Support/Espresso/Sugars
+git clone git://github.com/switz213/FrenchPress.sugar
+</code></pre>
+
+<p><a href="https://github.com/switz213/FrenchPress.sugar">https://github.com/switz213/FrenchPress.sugar</a></p>
+
+<p>Relaunch Espresso, and a new Javascript submenu will be available in your Actions menu.</p>
+
+<br/>
+
+
+<h3>Development</h3>
+
+<p>FrenchPress.sugar is written entirely in XML and JavaScript using Espresso&#8217;s <a href="http://wiki.macrabbit.com/index/JavaScriptActions/">JavaScript API</a>! Feel free to mess around with the code or fork it on github!</p>
+
+<p>You may email me if you have any feedback, requests, or run across any problems.</p>
+
+<p>hi@danielsaewitz.com</p>
+
+<br/>
+
+
+<h3>Changelog</h3>
+
+<p><strong>1.0</strong>:</p>
+
+<ul>
+<li>Initial release</li>
+<li>Beautify Javascript using menu or key-combo (<code>Control + Alt + Arrow Up</code>)</li>
+<li>Will automatically match your Espresso tab settings (# of spaces, spaces or tabs)</li>
+</ul>
+
+
+<br/>
+
+
+<h3>Thanks to:</h3>
+
+<h4>Ian Beck</h4>
+
+<p>This could not have been completed without the <a href="http://github.com/onecrayon/Handy.sugar">Handy.sugar</a> source code</p>
+
+<h4>JS Beautifier</h4>
+
+<p>Written by <a href="mailto:einar@jsbeautifier.org">Einar Lielmanis</a><br/>
+<a href="http://jsbeautifier.org/">http://jsbeautifier.org/</a></p>
+
+<p>Originally converted to javascript by <a href="mailto:vital76@gmail.com">Vital</a></p>
+
+<p>&#8220;End braces on own line&#8221; added by <a href="mailto:chrisjshull@gmail.com">Chris J. Shull</a></p>
+
+<br/>
+
+
+<h3>MIT License</h3>
+
+<p>Copyright (c) 2011 Daniel Saewitz</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &#8220;Software&#8221;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED &#8220;AS IS&#8221;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+  <div class="clear:both;"></div>
+</div>
+
+    
+    <p class="meta">
+    	I'm not a fan of comments on blogs, but I'd love to talk with you about this post! Email me at <a href="mailto:hi@saewitz.com">hi@saewitz.com</a>.
+    </p>
+  </footer>
+</article>
+
+</div><!--
+
+<aside class="sidebar">
+  
+    
+
+
+
+  
+</aside>
+
+-->
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 Daniel Saewitz All Rights Reserved
+  <br />
+  <span class="credit">
+  	Powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/mojombo/jekyll">Jekyll</a><br />
+  	Terminal icon by <a href="http://p.yusukekamiyamane.com">Yusuke Kamiyamane</a>
+  </span>
+  <br />
+  I just wanted to say hi, again!
+</p>
+
+</footer>
+  
+
+
+</body>
+</html>
