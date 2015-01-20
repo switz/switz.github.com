@@ -8,7 +8,7 @@
   <meta name="description" content="A Developer">
   <style type="text/css">
     h1 { font: Courier; margin-bottom: 0; }
-    p {margin: 0; font: 13.0px Courier; max-width: 550px;}
+    p {margin: 0 0 15px 0; font: 12.0px Courier; max-width: 550px;}
     p.subtitle {font: 10px Courier; margin-bottom: 35px;}
 
     a:link {color:#3393A6; text-decoration:none;}
@@ -25,12 +25,21 @@
   </p>
 
   <p>
+      <a href="http://relisten.net">Relisten.net</a><br>
+      Parade.app <span style="font-size: 8px">Coming soon!</span>
+  </p>
+
+  <p>
     Github: <a href="https://github.com/switz">https://github.com/switz</a>
     <br>
-    Website: <a href="https://github.com/switz">https://saewitz.com</a>
+    Website: <a href="http://saewitz.com" id="websitelink">https://saewitz.com</a>
     <br>
     Email: <a href="mailto:hi@saewitz.com">hi@saewitz.com</a>
   </p>
 
+        <script type="text/javascript">
+            // great syntax
+            window.websitelink.onclick = function(e) { e.preventDefault(); window.websitelink.innerHTML += " (recursion)"; }
+        </script>
 </body>
 </html>
