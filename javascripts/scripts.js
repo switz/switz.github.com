@@ -1,1 +1,0 @@
-$(document).ready(function(){return $(".link-prepend").mouseover(function(){return $(this).animate({opacity:.1},"slow").animate({opacity:1},"slow")})});
