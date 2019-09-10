@@ -23,6 +23,27 @@
 <style></style></head>
 
 <body>
+  <script>
+    var saewitzClicks = 0;
+    
+    var onSaewitzClick = function() {
+      // yes this intentionally has a bug where you can click on one link
+      // multiple times and you'll still hit 3
+      // even if you didn't click all 3
+      //
+      // i do not care.
+      if (++saewitzClicks === 3) {
+        alert('you really clicked on all of them?');
+      }
+      else if (saewitzClicks > 3) {
+        alert('no');
+      }
+      else {
+        alert('its fucking dead');
+      }
+    };
+  </script>
+  
   <p>
    Daniel Saewitz is an award winning athlete. Most improved player, Little League '98. Now he works on simple projects and sees a lot of live music.
   </p>
@@ -35,9 +56,9 @@
   
   <p>Dead Projects</p>
   <p>
-    <a href="javascript:alert('its fucking dead');">Parade</a> - a simply mediocre video sharing ios application<br><br>
-    <a href="javascript:alert('its fucking dead');">PhishVids</a> - a database and front-end of Phish videos, it sucked<br><br>
-    <a href="javascript:alert('its fucking dead');">Tweezer</a> - a bulk social network sharing tool, survived maybe one month<br><br>
+    <a href="javascript:onSaewitzClick();">Parade</a> - a simply mediocre video sharing ios application<br><br>
+    <a href="javascript:onSaewitzClick();">PhishVids</a> - a database and front-end of Phish videos, it sucked<br><br>
+    <a href="javascript:onSaewitzClick();">Tweezer</a> - a bulk social network sharing tool, survived maybe one month<br><br>
   </p>
 
   <p>
